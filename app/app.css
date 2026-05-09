@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yusei+Magic&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-notosans: "Noto Sans JP", sans-serif; 
+  --font-magic: "Yusei Magic", sans-serif;
+  --font-meiryo: "Meiryo", "メイリオ", sans-serif;
+}
+
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+* {
+  @apply font-meiryo;
+}

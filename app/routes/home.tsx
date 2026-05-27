@@ -22,7 +22,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {artists.map((artist) => (
             <Link key={artist.id} to={`/artist/${artist.id}`} className="group text-center">
-              <div className="w-24 h-24 mx-auto bg-gray-200 rounded-full mb-4" />
+              <div className="w-24 h-24 mx-auto mb-4"><img src={artist.icon} alt="Logo" className=" object-cover bg-gray-200 rounded-full w-full h-full" /></div>
               <h4 className="font-bold">{artist.name}</h4>
               <p className="text-xs text-orange-600 uppercase">{artist.role}</p>
             </Link>

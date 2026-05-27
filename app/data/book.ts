@@ -1,35 +1,38 @@
 // 型を定義してエクスポート
+import DacSpring from "../../static/DacSpring.png";
 export interface Book {
   id: string;
+  art: string;
   name: string;
-  role: string;
-  bio: string;
+  image: string;
+
 }
 
 export const book: Book[] = [
   {
     id: "yuki",
+    art: "one",
     name: "Yuki",
-    role: "Digital Artist",
-    bio: "自然界の光をデジタルで表現するアーティスト。",
+    image: DacSpring,
   },
   {
     id: "rin",
+    art: "one",
     name: "Rin Hatano",
-    role: "伝説の高校生",
-    bio: "自然界の光をデジタルで表現するアーティスト。",
+    image: DacSpring,
   },
   {
     id: "oliva",
+    art: "one",
     name: "Oliva",
-    role: "一番でかい",
-    bio: "自然界の光をデジタルで表現するアーティスト。",
+    image: DacSpring,
+
   },
   {
     id: "sumomo",
+    art: "one",
     name: "Sumomo Momonouchi",
-    role: "ビッチ",
-    bio: "自然界の光をデジタルで表現するアーティスト。",
+    image: DacSpring,
   },
   // ... 以下同じ
 ];

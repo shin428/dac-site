@@ -1,53 +1,49 @@
 import { Outlet, Link } from "react-router";
 import DacSpring from "../welcome/logo-light.svg";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+// 1. 再利用可能なナビゲーションリンクコンポーネント
+const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
+  <Link 
+    to={to} 
+    className="text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors duration-200"
+  >
+    {children}
+  </Link>
+);
+
+export default function Layout() {
   return (
-    <div>
-      <header className="w-full border-b border-gray-200">
-        <div className="max-w-screen-xl mx-auto px-4 py-4 items-center gap-4 flex justify-between">
-          <div>
-            <img src={DacSpring} alt="Logo" className="h-7" />
-          </div>
-          <div className="bg-orange-500 !text-white hover:bg-orange-600 rounded-md">login</div>
+    <div className="flex flex-col min-h-screen bg-[#FAFAFA]">
+      {/* Header: 固定 */}
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link to="/">
+            <img src={DacSpring} alt="Logo" className="h-6 md:h-8" />
+          </Link>
+
+          <nav className="hidden md:flex gap-8">
+            <NavLink to="/gallery">ギャラリー</NavLink>
+            <NavLink to="/exhibitions">展示</NavLink>
+            <NavLink to="/archives">記録</NavLink>
+          </nav>
+
+          <button className="px-5 py-2 bg-gray-900 text-white text-xs font-bold uppercase rounded-full hover:bg-orange-600 transition-all">
+            Login
+          </button>
         </div>
       </header>
 
+      {/* Main Content: ページごとの切り替え場所 */}
+      <main className="flex-grow w-full max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <Outlet />
+      </main>
 
-      <div className="
-          *:w-1/4
-          mt-4
-          *:p-4
-          *:bg-green-500/10
-          *:rounded-lg
-          *:shadow-md
-          *:text-center
-          *:font-bold
-          gap-4
-          flex
-          w-full
-          *:hover:bg-green-400
-          *:transition-colors
-          *:ease-in-out
-          *:duration-500
-          "
-      >
-        <Link to="https://www.google.com/">紹介</Link>
-        <Link to="/about">about</Link>
-        <Link to="/gallery">gallery</Link>
-        <Link to="/booth">booth</Link>
-      </div>
-        // Tailwind CSSの例
-      <div className="flex gap-4 p-4">
-        {[1, 2, 3, 4].map((i) => (
-          <div key={i} className="flex-1 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-            <h3 className="font-bold">Item {i}</h3>
-            <p className="text-sm text-gray-500">説明文がここに入ります。</p>
-          </div>
-        ))}
-      </div>
-      <Outlet />
-      <div className="bg-gray-800 text-white p-4 text-center">Footer</div>
+      {/* Footer: 固定 */}
+      <footer className="border-t border-gray-100 bg-white py-8">
+        <div className="max-w-7xl mx-auto px-4 text-center text-[10px] text-gray-400 uppercase tracking-widest">
+          © 2026 Art Club Studio. All rights reserved.
+        </div>
+      </footer>
     </div>
-  )
+  );
 }

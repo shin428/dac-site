@@ -41,7 +41,7 @@ export default function Layout() {
       {/* Footer: 固定 */}
       <footer className="border-t border-gray-100 bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-[10px] text-gray-400 uppercase tracking-widest">
-          © 2026 Art Club Studio. All rights reserved.
+          © 2026 Digital Art Club. All rights reserved.
         </div>
       </footer>
     </div>

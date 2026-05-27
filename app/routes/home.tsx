@@ -2,6 +2,7 @@ import type { Route } from "./+types/home";
 import { GalleryCarousel } from "../routes/GalleryCarousel";
 import { artists } from "../data/artists";
 import { newsData } from "../data/news"; // ニュースデータをインポート
+import { book } from "../data/book"
 import { Link } from "react-router";
 
 export default function Home() {

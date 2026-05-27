@@ -1,15 +1,15 @@
 // 型を定義してエクスポート
-export interface Artist {
+export interface Book {
   id: string;
   name: string;
   role: string;
   bio: string;
 }
 
-export const artists: Artist[] = [
+export const book: Book[] = [
   {
     id: "yuki",
-    name: "Yuki Tanaka",
+    name: "Yuki",
     role: "Digital Artist",
     bio: "自然界の光をデジタルで表現するアーティスト。",
   },

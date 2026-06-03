@@ -18,7 +18,7 @@ export default function Home() {
 
       {/*アーティスト*/}
       <section className="bg-white py-16 px-6 rounded-3xl border border-gray-100">
-        <h2 className="text-2xl font-bold mb-10 text-center">Featured Artists</h2>
+        <h2 className="text-2xl font-bold mb-10 text-center">Artists</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {artists.map((artist) => (
             <Link key={artist.id} to={`/artist/${artist.id}`} className="group text-center">
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/*ニュースofニュース*/}
       <section className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold mb-8">Latest Updates</h2>
+        <h2 className="text-2xl font-bold mb-8">Latest News</h2>
         <div className="grid gap-4">
           {newsData.map((news) => (
             <Link 

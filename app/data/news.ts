@@ -10,16 +10,16 @@ export interface NewsItem {
 export const newsData: NewsItem[] = [
   {
     id: "summer-exhibition",
-    date: "2026.05.27",
-    title: "夏の定例展示会が決定しました",
-    category: "Event",
-    content: "今年の夏は、海辺のアトリエにて個展を開催します。詳細はこちら..."
+    date: "2026.04.25くらい",
+    title: "M3に参加しました",
+    category: "2026-M3",
+    content: "昨年の秋に引き続き今年の春もM3に参加しました。なんと完売やったね。大好評につきboothでも販売してますので是非是非。"
   },
   {
     id: "new-members",
-    date: "2026.05.20",
-    title: "新メンバーによるポートフォリオ公開",
-    category: "Update",
-    content: "新たに3名のアーティストが加入しました。彼らの作品をぜひご覧ください。"
+    date: "2026.05.1",
+    title: "新しい人がたくさん",
+    category: "NewMember",
+    content: "まじでたくさんの新入生が加入してくれました。今年も安泰かもね全部で70人くらいいるんじゃないすごいね"
   }
 ];

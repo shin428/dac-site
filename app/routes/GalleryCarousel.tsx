@@ -1,7 +1,7 @@
 // GalleryCarousel.tsx の一部
 import { Outlet, Link } from "react-router";
 import { book } from "../data/book";
-import DacSpring from "../../static/DacSpring.png";
+
 
 
 

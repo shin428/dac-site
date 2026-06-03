@@ -11,7 +11,7 @@ export default function Home() {
       {/*ギャラリー*/}
       <section>
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-serif font-bold mb-4">Selected Works</h1>
+          <h1 className="text-4xl font-serif font-bold mb-4">Latest Art</h1>
         </div>
         <GalleryCarousel />
       </section>

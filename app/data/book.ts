@@ -10,28 +10,33 @@ export interface Book {
 
 export const book: Book[] = [
   {
-    id: "yuki",
-    art: "one",
-    name: "Yuki",
+    id: "2026_dac_book",
+    art: "2026SpecialBook",
+    name: "2026年の本",
     image: DacSpring,
   },
   {
-    id: "rin",
-    art: "one",
-    name: "Rin Hatano",
+    id: "2026_dac_book",
+    art: "2026SpecialBook",
+    name: "2026年の本",
     image: DacSpring,
   },
   {
-    id: "oliva",
-    art: "one",
-    name: "Oliva",
+    id: "2026_dac_book",
+    art: "2026SpecialBook",
+    name: "2026年の本",
     image: DacSpring,
-
   },
   {
-    id: "sumomo",
-    art: "one",
-    name: "Sumomo Momonouchi",
+    id: "2026_dac_book",
+    art: "2026SpecialBook",
+    name: "2026年の本",
+    image: DacSpring,
+  },
+  {
+    id: "2026_dac_book",
+    art: "2026SpecialBook",
+    name: "2026年の本",
     image: DacSpring,
   },
   // ... 以下同じ

@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router";
-import DacSpring from "../welcome/logo-light.svg";
+import DacSpring from "../welcome/moji.png";
 
 // 1. 再利用可能なナビゲーションリンクコンポーネント
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
@@ -24,7 +24,7 @@ export default function Layout() {
           <nav className="hidden md:flex gap-8">
             <NavLink to="/gallery">ギャラリー</NavLink>
             <NavLink to="/exhibitions">展示</NavLink>
-            <NavLink to="/archives">記録</NavLink>
+            <NavLink to="https://booth.pm/">booth</NavLink>
           </nav>
 
           <button className="px-5 py-2 bg-gray-900 text-white text-xs font-bold uppercase rounded-full hover:bg-orange-600 transition-all">

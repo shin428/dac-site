@@ -9,7 +9,7 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
-    id: "summer-exhibition",
+    id: "2026-M3",
     date: "2026.04.25くらい",
     title: "M3に参加しました",
     category: "2026-M3",

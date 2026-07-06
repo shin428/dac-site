@@ -4,21 +4,27 @@ import { artists } from "../data/artists";
 import { newsData } from "../data/news"; // ニュースデータをインポート
 import { book } from "../data/book"
 import { Link } from "react-router";
+import Dac from "../../static/dacChan.png";
 
 export default function Home() {
   return (
     <div className="space-y-24 py-10">
+      <section>
+        <div className="flex justify-center">
+          <img src="https://dactoyama.com/images/topImageKokuban.png" alt="alt" />
+        </div>
+      </section>
       {/*ギャラリー*/}
       <section>
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-serif font-bold mb-4">Latest Art</h1>
+          <h1 className="text-4xl font-serif font-bold mb-4">アドバイスください</h1>
         </div>
         <GalleryCarousel />
       </section>
 
       {/*アーティスト*/}
       <section className="bg-white py-16 px-6 rounded-3xl border border-gray-100">
-        <h2 className="text-2xl font-bold mb-10 text-center">Artists</h2>
+        <h2 className="text-2xl font-bold mb-10 text-center">artists</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {artists.map((artist) => (
             <Link key={artist.id} to={`/artist/${artist.id}`} className="group text-center">

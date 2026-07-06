@@ -9,7 +9,7 @@ export function GalleryCarousel() {
   return (
     <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory">
       {book.map((book) => (
-        <div key={book.id} className="flex-none w-[280px] snap-start">
+        <div key={book.id} className="flex-none w-[200px] snap-start">
           <div className="aspect-[1/1] bg-white-200 rounded-lg mb-4" >
             <Link to="/">
               <img src={book.image} alt="Logo" className="object-contain w-full h-full  pb-8" />

@@ -9,7 +9,21 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
-    id: "summer-exhibition",
+    id: "2026-M3",
+    date: "2026.04.25くらい",
+    title: "M3に参加しました",
+    category: "2026-M3",
+    content: "昨年の秋に引き続き今年の春もM3に参加しました。なんと完売やったね。大好評につきboothでも販売してますので是非是非。"
+  },
+  {
+    id: "2026-M3",
+    date: "2026.04.25くらい",
+    title: "M3に参加しました",
+    category: "2026-M3",
+    content: "昨年の秋に引き続き今年の春もM3に参加しました。なんと完売やったね。大好評につきboothでも販売してますので是非是非。"
+  },
+  {
+    id: "2026-M3",
     date: "2026.04.25くらい",
     title: "M3に参加しました",
     category: "2026-M3",
